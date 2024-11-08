@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcutator</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <h1 class="text-center pt-4 container">calculator App</h1>
+
+    <div id="container" class="container">
+      <div id="calculator" class="">
+
+        <input type="text" placeholder="0" id="input_box" />
+
+        <button class="btn text-dark rounded-pill" onclick="clean()">AC</button>
+        <button class="btn text-dark rounded-pill" onclick="del()">DL</button>
+        <button class="btn text-dark rounded-pill" onclick="display('%')">%</button>
+        <button class="btn btn-warning rounded-pill" onclick="display('/')">/</button>
+        <button class="btn text-dark rounded-pill" onclick="display('7')">7</button>
+        <button class="btn text-dark rounded-pill" onclick="display('8')">8</button>
+        <button class="btn rounded-pill" onclick="display('9')">9</button>
+        <button class="btn btn-warning rounded-pill" onclick="display('*')">*</button>
+        <button class="btn text-dark rounded-pill" onclick="display('4')">4</button>
+        <button class="btn text-dark rounded-pill" onclick="display('5')">5</button>
+        <button class="btn text-dark rounded-pill" onclick="display('6')">6</button>
+        <button class="btn btn-warning rounded-pill" onclick="display('-')">-</button>
+        <button class="btn rounded-pill" onclick="display('1')">1</button>
+        <button class="btn rounded-pill" onclick="display('2')">2</button>
+        <button class="btn rounded-pill" onclick="display('3')">3</button>
+        <button class="btn btn-warning rounded-pill" onclick="display('+')">+</button>
+        <button class="btn rounded-pill" onclick="display('0')">0</button>
+        <button class="btn rounded-pill" onclick="display('.')">.</button>
+        <button class="btn btn-warning rounded-pill" onclick="equal()">=</button>
+        <button class="btn text-dark btn-danger rounded-pill" onclick="ran()">RN</button>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
